@@ -1,0 +1,29 @@
+{
+  "name": "santa-secreto-cristancho-moreno",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "db:check": "node --env-file=.env.local scripts/check-db.mjs"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.0",
+    "bcryptjs": "^3.0.2",
+    "jose": "^6.1.0",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "^5.9.0"
+  },
+  "overrides": {
+    "postcss": "^8.5.23"
+  }
+}
